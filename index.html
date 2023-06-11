@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading-1">Password Generator</h1>
+        <div class="password-wrapper">
+            <!-- <div class="password">
+                <input type="text">
+            </div> -->
+            <input type="text" class="password">
+            <div class="icon-wrapper" >
+                <ion-icon name="copy-outline" class="icon"></ion-icon>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="slider-wrapper">
+                <div class="label-wrapper">
+                    <label for="slider" class="slider-label">Character Length</label>
+                    <div class="length">8</div>
+                </div>
+                <input type="range" name="slider" id="slider" min="8" max="25" step="1" class="slidder-input">
+            </div>
+            <div class="checkboxes">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="uppercase" id="uppercase" class="checkbox-input">
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="lowercase" id="lowercase" class="checkbox-input">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="numbers" id="numbers" class="checkbox-input">
+                    <label for="numbers">Include Numbers</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="symbols" id="symbols" class="checkbox-input">
+                    <label for="symbols">Include Symbols</label>
+                </div>
+            </div>
+            <div class="strength-wrapper">
+                <p class="strength">Strength</p>
+                <div class="strength-content">
+                    <div class="strength-text"></div>
+                    <div class="strength-blocks">
+                        <div class="strength-block block-1"></div>
+                        <div class="strength-block block-2"></div>
+                        <div class="strength-block block-3"></div>
+                        <div class="strength-block block-4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn">Generate &rarr;</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="footer-text">Built by <a href="#" class="footer-link">Rahul Raj Sahoo</a>. Design credit goes to <a href="https://www.frontendmentor.io/" class="footer-link">Frontend Mentor</a>.</p>
+    </footer>
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

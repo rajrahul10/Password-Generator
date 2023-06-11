@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+    --color-primary: #88eb1e;
+    --color-bg-body: #060708;
+    --color-bg-container: #333;
+    --color-text: #fff;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100vh;
+    background-color: var(--color-bg-body);
+    color: var(--color-text);
+
+    display: flex;
+    justify-content: center;
+}
+
+/* STYLES: INPUT-RANGE */
+
+input[type=range] {
+    width: 100%;
+}
+
+/* input[type=range]::-webkit-slider-thumb {
+    border: 1px solid greenyellow;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+} */
+
+/* input[type=range]:focus {
+    outline: none; 
+} */
+
+/* STYLES: INPUT-CHECKBOX */
+
+
+/* HTML STYLES */
+
+.heading-1 {
+    font-size: 2rem;
+}
+
+.container {
+    width: 50rem;
+    padding: 2rem;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.btn {
+    border: 2px solid transparent;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: var(--color-primary);
+}
+
+.btn:hover {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.password-wrapper {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    background-color: var(--color-bg-container);
+    color: #534e4e;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+.password-wrapper:hover > input, .password-wrapper:hover > .icon-wrapper > .icon {
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.password {
+    height: 100%;
+    width: 100%;
+    border: transparent;
+    background-color: var(--color-bg-container);
+    color: #534e4e;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.5rem;
+}
+
+.password:focus {
+    outline: none;
+}
+
+.icon-wrapper {
+    padding: .6rem;
+}
+
+.icon {
+    font-size: 2rem;
+    color: var(--color-primary);
+    position: relative;
+}
+
+/* .icon::before {
+    content: "Copied";
+    color: var(--color-primary);
+    background-color: var(--color-text);
+    position: absolute;
+    top: -5rem;
+}
+
+.icon::after {
+    content: "";
+    height: 4rem;
+    width: 4rem;
+} */
+
+.actions {
+    background-color: var(--color-bg-container);
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.label-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.length {
+    font-size: 2.4rem;
+    color: var(--color-primary);
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.strength-wrapper {
+    background-color: var(--color-bg-body);
+    padding: 1.5rem 2rem;
+    color: var(--color-text);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.strength {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #534e4e;
+}
+
+.strength-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.strength-text {
+    font-size: 1.6rem;
+}
+
+.strength-blocks {
+    display: flex;
+    gap: .4rem;
+}
+
+.strength-block {
+    height: 4rem;
+    width: .8rem;
+    background-color: #fff;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-bg-container);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.footer-link:link {
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+/* MEDIA QUERIES */
+
